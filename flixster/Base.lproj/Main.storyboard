@@ -128,24 +128,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lv9-BD-5zs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="314"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lv9-BD-5zs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="ESI-a0-yXn"/>
+                                    <constraint firstAttribute="height" constant="314" id="kOb-dg-uFT"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-QD-7Th">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-QD-7Th">
                                 <rect key="frame" x="20" y="204" width="150" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Sfm-BX-w14"/>
+                                    <constraint firstAttribute="width" constant="150" id="fcD-Wg-N9N"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDS-n7-NMp">
-                                <rect key="frame" x="181" y="322" width="178" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDS-n7-NMp">
+                                <rect key="frame" x="181" y="322" width="56" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89z-9H-OhM">
-                                <rect key="frame" x="20" y="438" width="339" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89z-9H-OhM">
+                                <rect key="frame" x="20" y="438" width="339" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -153,6 +157,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aoh-xT-tBq"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lv9-BD-5zs" firstAttribute="leading" secondItem="aoh-xT-tBq" secondAttribute="leading" id="8GH-e3-A3a"/>
+                            <constraint firstItem="wDS-n7-NMp" firstAttribute="leading" secondItem="DMo-QD-7Th" secondAttribute="trailing" constant="11" id="Chb-Vd-n4s"/>
+                            <constraint firstItem="lv9-BD-5zs" firstAttribute="top" secondItem="RQS-6s-0Bg" secondAttribute="top" id="ETc-eF-Nkj"/>
+                            <constraint firstItem="89z-9H-OhM" firstAttribute="leading" secondItem="aoh-xT-tBq" secondAttribute="leading" constant="20" id="RoL-xn-swv"/>
+                            <constraint firstItem="DMo-QD-7Th" firstAttribute="top" secondItem="aoh-xT-tBq" secondAttribute="top" constant="160" id="TQ5-7R-U52"/>
+                            <constraint firstItem="lv9-BD-5zs" firstAttribute="trailing" secondItem="aoh-xT-tBq" secondAttribute="trailing" id="VRG-Dr-wNa"/>
+                            <constraint firstItem="DMo-QD-7Th" firstAttribute="leading" secondItem="aoh-xT-tBq" secondAttribute="leading" constant="20" id="W7Y-n4-xRB"/>
+                            <constraint firstItem="aoh-xT-tBq" firstAttribute="trailing" secondItem="89z-9H-OhM" secondAttribute="trailing" constant="55" id="aEm-w1-cXL"/>
+                            <constraint firstItem="wDS-n7-NMp" firstAttribute="top" secondItem="lv9-BD-5zs" secondAttribute="bottom" constant="8" symbolic="YES" id="n6f-Ii-n9o"/>
+                            <constraint firstItem="89z-9H-OhM" firstAttribute="top" secondItem="DMo-QD-7Th" secondAttribute="bottom" constant="14" id="r1C-6n-fCD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WdC-05-WPt"/>
                     <connections>
@@ -164,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3O-UA-GcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794" y="1490"/>
+            <point key="canvasLocation" x="-794.20289855072474" y="1489.4021739130435"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="31B-mr-RPG">

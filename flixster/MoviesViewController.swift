@@ -62,14 +62,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
         let posterUrl = URL(string: baseUrl + posterPath)
-        cell.posterView.af_setImage(withURL: posterUrl!)
+        cell.posterView.af.setImage(withURL: posterUrl!)
         
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Loading up the details screen")
-        
         // Find the selected movie
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
